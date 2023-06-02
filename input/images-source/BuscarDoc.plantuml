@@ -1,0 +1,6 @@
+@startuml
+Prestador -> PlataformaIHC: GET DocumentReference (subject.identifier: <<valor>>)
+PlataformaIHC --> Prestador: Bundle (DocumentReference)
+@enduml
+
+

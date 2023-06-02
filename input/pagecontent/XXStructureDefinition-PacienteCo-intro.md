@@ -1,0 +1,6 @@
+## Definicion del paciente:
+
+...
+
+## El RDA y la IHC
+...

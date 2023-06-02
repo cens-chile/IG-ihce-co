@@ -1,0 +1,54 @@
+# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.co.CoreCO
+# canonical: https://hl7chile.cl/fhir/ig/CoreCL
+# canonical: https://vulcano.sispropreprod.gov.co/fhir
+
+canonical: https://www.minsalud.gov.co/ihc/fhir
+version: 0.4
+name: CoreCO-ImplementationGuide
+
+title: Interoperabilidad de Historia Clínica - Colombia
+status: draft
+publisher: 
+  name: MSP Colombia
+  url: https://www.minsalud.gov.co/
+description: Ministerio de Salud Colombia - Interoperabilidad de Historia Clínica IHC - 
+jurisdiction: urn:iso:std:iso:3166#CO "Colombia"
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2023+
+releaseLabel: ci-build
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Inicio: index.html
+  Generalidades: Aspectos-Generales.html
+  RDA: rda.html
+  Transacciones: transacciones.html
+  Terminología: terminologia.html
+  Perfiles:
+    "Paciente": StructureDefinition-PacienteCo.html
+    "Profesional": StructureDefinition-PractitionerCo.html
+    "Organización": StructureDefinition-OrganizacionCo.html
+    "Condition": StructureDefinition-ConditionCo.html
+    "Alergias": StructureDefinition-AlergiaCo.html
+    "Medicamentos": StructureDefinition-MedicationStatementCo.html
+    "RDA": StructureDefinition-CompositionCo.html
+    "DocumentoREF": StructureDefinition-DocumentReferenceCo.html
+    "BundleCo": StructureDefinition-BundleCo.html
+  Resumen: 
+    "Versiones": versiones.html
+    "Resumen": artifacts.html
+
+
+   

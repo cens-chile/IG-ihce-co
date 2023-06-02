@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <extension url="http://hl7.org/fhir/StructureDefinition/us-core-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="http://hl7.org/fhir/v3/Race"/>
+                <code value="2106-3"/>
+                <display value="White"/>
+            </valueCoding>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
+                <code value="2"/>
+                <display value="BUDAISMO"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="oid:2.16.858.2.10000675.68909"/>
+                <code value="1001"/>
+                <display value="C.I."/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.858.2.10000675.68909"/>
+        <value value="4943437429"/>
+    </identifier>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="oid:2.16.858.2.10000675.68912"/>
+                <code value="1002"/>
+                <display value="Pasaporte"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.858.2.10000675.68912"/>
+        <value value="4358455294"/>
+    </identifier>
+    <identifier>
+        <use value="secondary"/>
+        <type>
+            <coding>
+                <system value="oid:2.16.858.2.10000675.69586"/>
+                <code value="1520"/>
+                <display value="CJP"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.858.2.10000675.69586"/>
+        <value value="53432432424"/>
+    </identifier>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="oid:2.16.858.2.10002886.72768.1"/>
+                <code value="1632"/>
+                <display value="Nro.Mat."/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.858.2.10002886.72768.1"/>
+        <value value="494243729"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <use value="official"/>
+        <text value="AGUSTIN BIDART LINARES"/>
+        <family value="BIDART LINARES"/>
+        <given value="AGUSTIN"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="2481 9999"/>
+        <use value="home"/>
+        <rank value="1"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="098713499"/>
+        <use value="mobile"/>
+        <rank value="2"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="jsmithperez@acme.com"/>
+        <use value="home"/>
+        <rank value="3"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1997-02-28"/>
+    <address>
+        <use value="home"/>
+        <type value="physical"/>
+        <text value="EDUARDO ACEVEDO 8345 apto. 201 entre Silvestre Blanco y Charrúa"/>
+        <line value="EDUARDO ACEVEDO"/>
+        <line value="8345"/>
+        <line value="201"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="-"/>
+        <line value="CENTRO"/>
+        <line value="Silvestre Blanco"/>
+        <line value="Charrúa"/>
+        <line value="Al lado de la ferretería"/>
+        <city value="Montevideo"/>
+        <state value="UY-MO"/>
+        <postalCode value="ZIPCODE"/>
+        <country value="UY"/>
+    </address>
+    <maritalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="UNK"/>
+        </coding>
+    </maritalStatus>
+    <photo>
+        <contentType value="image/gif"/>
+        <data value="R0lGODlhEwARAPcAAAAAAAAA/+9aAO+1AP/WAP/eAP/eCP/eEP/eGP/nAP/nCP/nEP/nIf/nKf/nUv/nWv/vAP/vCP/vEP/vGP/vIf/vKf/vMf/vOf/vWv/vY//va//vjP/3c//3lP/3nP//tf//vf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEAAAEALAAAAAATABEAAAi+AAMIDDCgYMGBCBMSvMCQ4QCFCQcwDBGCA4cLDyEGECDxAoAQHjxwyKhQAMeGIUOSJJjRpIAGDS5wCDly4AALFlYOgHlBwwOSNydM0AmzwYGjBi8IHWoTgQYORg8QIGDAwAKhESI8HIDgwQaRDI1WXXAhK9MBBzZ8/XDxQoUFZC9IiCBh6wEHGz6IbNuwQoSpWxEgyLCXL8O/gAnylNlW6AUEBRIL7Og3KwQIiCXb9HsZQoIEUzUjNEiaNMKAAAA7"/>
+    </photo>
+    <communication>
+        <language>
+            <coding>
+                <system value="urn:ietf:bcp:47"/>
+                <code value="es"/>
+                <display value="Español"/>
+            </coding>
+            <text value="Español"/>
+        </language>
+    </communication>
+    <generalPractitioner>
+        <reference value="Practitioner/93"/>
+        <display value="MARIANA GONZALEZ"/>
+    </generalPractitioner>
+</Patient>

@@ -1,0 +1,131 @@
+
+
+Profile: BundleCoMHD
+Parent: Bundle
+Id: BundleCoMHD
+Title: "Bundle CoMHD"
+Description: "Se describe como debe ser el recurso Bundle para transportar Document Reference."
+
+/*
+* type MS
+* type from BundleType (required)
+* type ^short = "| transaction | transaction-response | batch | batch-response | history | searchset | collection, en nuestro caso se fuerza a collection"
+* type ^definition = "Indica la finalidad de este paquete, es decir, cómo se va a utilizar. En este caso se utiliza 'Transaction' "
+//* type ^comment = "Es posible utilizar un paquete para otros fines (por ejemplo, 
+//un documento puede ser aceptado como una transacción). Esto se define principalmente para que pueda haber reglas específicas para algunos de los tipos de paquetes."
+*/
+
+/* timestamp 1.. MS
+* timestamp ^short = "Hora en la cual cual fue ensamblado el Bundle en formato YYYY-MM-DDThh:mm:ss.sss+zz:zz"
+* timestamp ^definition = "La fecha/hora en que se ensambló el paquete, es decir, cuando se colocaron los recursos en el paquete"
+//* timestamp ^comment = "Para muchos paquetes, la marca de tiempo es igual a .meta.lastUpdated, porque no se almacenan (por ejemplo, los resultados de la búsqueda). Cuando un bundle se coloca en un almacén persistente, .meta.lastUpdated suele ser modificado por el servidor. Cuando el bundle es un mensaje, un agente de middleware que altere el mensaje (aunque no esté almacenado) DEBERÍA actualizar .meta.lastUpdated. .timestamp se utiliza para rastrear la hora original del Bundle, y DEBERÍA ser rellenado."
+
+* entry 1.. MS
+* entry ^short = "Se agregan los recursos que se desean adjuntar dentro del bundle en el elemento fullUrl"
+* entry.fullUrl MS
+* entry.fullUrl ^short = "URL absoluta del recurso a vincular"
+
+
+* type = #transaction
+
+//------Entradas
+* entry MS
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.description = "Slicing based on the profile conformance of the entry"
+* entry ^slicing.rules = #closed
+* entry.resource MS
+
+
+* entry contains
+    DocumentRefs 0.. and
+    RDA 0.. and
+    Condition 0..* and
+
+    //Documents 0..* and
+    Patient 0.. //verificar si DEBE SER 1.
+  
+
+/*   --------- Document REF ---------*/
+* entry[DocumentRefs] ^short = "the DocumentReference resources"
+* entry[DocumentRefs] ^definition = "any and all DocumentReference that are part of the SubmissionSet. These might be new, replacements, or other associations"
+
+* entry[DocumentRefs].resource 1..
+* entry[DocumentRefs].resource only $canonicaDocRefCo
+
+//metodo POST
+* entry[DocumentRefs].request 1..
+* entry[DocumentRefs].request.method = #POST
+
+
+/*   --------- Compostion ---------*/
+* entry[RDA] ^short = "...."
+* entry[RDA] ^definition = "...."
+
+* entry[RDA].resource 0..1
+* entry[RDA].resource only $canonicaComposition
+
+//metodo POST
+* entry[RDA].request 0..1
+* entry[RDA].request.method = #POST
+
+
+
+/* --------- Condition ---------*/
+* entry[Condition] ^short = "the DocumentReference resources"
+* entry[Condition] ^definition = "any and all DocumentReference that are part of the SubmissionSet. These might be new, replacements, or other associations"
+
+* entry[Condition].resource 0..1
+* entry[Condition].resource only $canonicaCondition
+
+//metodo POST
+* entry[Condition].request 1..
+* entry[Condition].request.method = #POST
+
+
+
+/*
+* entry[Documents] ^short = "the documents"
+* entry[Documents] ^definition = "the documents referenced by the DocumentReference resources"
+* entry[Documents].resource 1..
+* entry[Documents].resource only Binary
+* entry[Documents].request 1..
+* entry[Documents].request.method = #POST
+*/
+
+* entry[Patient] ^short = "the Patient"
+* entry[Patient] ^definition = "the Patient"
+* entry[Patient].resource 1..
+* entry[Patient].resource only $canonicaPaciente
+* entry[Patient].request.method 
+
+
+
+
+/*
+
+/*
+* entry contains
+    SubmissionSet 1..1 and
+    DocumentRefs 0..* and
+    Documents 0..* and
+    Folders 0..* and
+    Patient 0..1
+
+* entry[SubmissionSet] ^short = "the SubmissionSet"
+* entry[SubmissionSet] ^definition = "The SubmissionSet defines who submitted it, why they submitted it, when they submitted, what is in it, and where it is destine."
+* entry[SubmissionSet].resource 1..
+* entry[SubmissionSet].resource only $IHE.MHD.Minimal.SubmissionSet
+* entry[SubmissionSet].request 1..
+* entry[SubmissionSet].request.method = #POST
+*/
+
+/*
+* entry[Folders] ^short = "Folders"
+* entry[Folders] ^definition = "any Folders being created or updated"
+* entry[Folders].resource 1..
+* entry[Folders].resource only $IHE.MHD.Minimal.Folder
+* entry[Folders].request 1..
+* entry[Folders].request.method from $MHDprovideFolderActions (required)
+//*entry[Patient].request.method from $MHDprovidePatientActions (required)
+*/
