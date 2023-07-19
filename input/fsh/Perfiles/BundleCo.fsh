@@ -18,8 +18,9 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 
 * entry contains
     DocumentRefs 1..1 and
+    Profesional 1..1 and
     RDA 1..1 and
-    Condition 0..* and    
+    Condition 1..* and    
     Alergias 0..* and
     Medicaciones 0..* and    
     Patient 1..1
@@ -49,6 +50,16 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[RDA].request.method = #POST
 
 
+/*   --------- Practitioner ---------*/
+* entry[Profesional] ^short = "Profesional."
+* entry[Profesional] ^definition = "Profesional"
+
+* entry[Profesional].resource 1..
+* entry[Profesional].resource only $canonicaPractitioner
+
+//metodo POST
+* entry[Profesional].request 1..
+* entry[Profesional].request.method = #POST
 
 /* --------- Condition ---------*/
 * entry[Condition] ^short = "Condiciones."

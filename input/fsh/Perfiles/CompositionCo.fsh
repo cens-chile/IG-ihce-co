@@ -57,7 +57,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * title ^definition = "Título oficial del documento para que pueda ser legible."
 
 
-* section 1.. MS
+* section 1..3 MS
 
 //----- division de secciones -------
 * section ^slicing.discriminator[0].type = #pattern
@@ -74,9 +74,9 @@ Description: "Definición de un documento clínico para las necesidades de inter
 
 //--------- Secciones 
 * section contains
-    sectionDiagnosticos 0.. MS and
-    sectionMedicacion 0.. MS and
-    sectionAlergias 0.. MS
+    sectionDiagnosticos 1..1 MS and
+    sectionMedicacion 0..1 MS and
+    sectionAlergias 0..1 MS
 
   
 //------ 1. Diagnosticos------------

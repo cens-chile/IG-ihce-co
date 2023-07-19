@@ -18,3 +18,7 @@
   - Agregado de recursos Alergias y medicamentos.
   - Actualización de recurso - Composition RDA: se agregan nuevas referencias a recursos : alergias y medicamentos.
   - Agregado de terminología.
+- 0.4.1 , 2023-07-19
+  - Se agrega practitioner a Bundle
+  - Se modifica cardinalidad en Composition.section
+  - Se modifica cardinalidad en Composition.section:sectionDiagnosticos

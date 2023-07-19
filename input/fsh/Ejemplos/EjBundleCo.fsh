@@ -27,6 +27,12 @@ Description: "Ejemplo de Bundle"
 * entry[RDA].request.url = "Composition"
 
 
+//Practitioner
+* entry[Profesional].fullUrl = "Practitioner/ProfesionalColombia"
+* entry[Profesional].resource = ProfesionalColombia
+* entry[Profesional].request.method = #POST
+* entry[Profesional].request.url = "Practitioner"
+
 //Condition
 * entry[Condition].fullUrl = "Condition/ConditionColombia"
 * entry[Condition].resource = ConditionColombia
