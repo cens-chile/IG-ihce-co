@@ -22,3 +22,4 @@
   - Se agrega practitioner a Bundle
   - Se modifica cardinalidad en Composition.section
   - Se modifica cardinalidad en Composition.section:sectionDiagnosticos
+  - Actualización de Ejemplos

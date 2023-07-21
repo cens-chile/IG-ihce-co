@@ -1,7 +1,6 @@
-Instance: DocumentReferenceCo
-InstanceOf: DocumentReference
+Instance: DocumentReferenceColombia
+InstanceOf: DocumentReferenceCo 
 Usage: #example
-* meta.profile = $canonicaDocRefCo
 
 
 /* identificador creado por la institucion */

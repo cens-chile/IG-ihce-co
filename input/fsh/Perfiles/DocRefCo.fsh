@@ -60,7 +60,7 @@ Description: "Docuento utilizado para guardar referencias."
 * subject.reference ^short = "URL que referencia al recurso paciente."
 
 
-* subject only Reference($canonicaPaciente)
+* subject only Reference(PacienteCo)
 
 
 //-----------CUSTODIAN ---------
@@ -70,7 +70,7 @@ Description: "Docuento utilizado para guardar referencias."
 * custodian.reference 1..1
 * custodian.reference ^short = "URL que indica la Organización."
 
-* custodian only Reference($canonicaOrganization)
+* custodian only Reference(OrganizacionCo)
 
 
 
@@ -80,7 +80,7 @@ Description: "Docuento utilizado para guardar referencias."
 * author.reference 1..
 * author.reference ^short = "URL que indica el autor."
 
-* author only Reference($canonicaOrganization) 
+* author only Reference(OrganizacionCo) 
 
 
 

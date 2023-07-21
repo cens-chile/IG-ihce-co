@@ -6,7 +6,7 @@ Usage: #definition
 * meta.source = "#4ccd4ccd6525236f"
 * url = "https://www.minsalud.gov.co/ihc/fhir/SearchParameter/identifier-type"
 * version = "1"
-* name = "identifier-type"
+* name = "IdentifierType"
 * status = #active
 * experimental = true
 * date = "2020-05-28"
@@ -30,7 +30,7 @@ Usage: #definition
 * meta.source = "#1713de7ffdefbac0"
 * url = "https://www.minsalud.gov.co/ihc/fhir/SearchParameter/identifier-country"
 * version = "1"
-* name = "identifier-country"
+* name = "IdentifierCountry"
 * status = #active
 * experimental = true
 * date = "2020-05-28"

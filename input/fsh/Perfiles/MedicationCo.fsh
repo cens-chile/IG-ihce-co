@@ -5,7 +5,7 @@ Description:    "Medicación del paciente"
 
 
 //---paciente
-* subject only Reference($canonicaPaciente)
+* subject only Reference(PacienteCo)
 * subject MS
 * subject.reference 1.. MS
 

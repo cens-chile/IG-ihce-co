@@ -1,11 +1,9 @@
 
-Instance: MedicationStatementCo
-InstanceOf: MedicationStatement
+Instance: MedicationStatementColombia
+InstanceOf: MedicationStatementCo
 Usage: #example
 Description: "Ejemplo de MedicationStatement/MedicaciónPaciente."
 
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-01-13T22:23:44.162Z"
 * meta.profile = $canonicaMedication
 
 * subject = Reference(Patient/PacienteColombiano)

@@ -23,7 +23,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 
 //* ---- Paciente ----- 
 * subject 1..1 
-* subject only Reference($canonicaPaciente)
+* subject only Reference(PacienteCo)
 * subject MS
 * subject ^definition = "Paciente sobre el cual se ha generado este documento. Este debe ser el Perfil de paciente Colombiano."
 * subject ^short = "Paciente sobre el cual se ha generado este documento. Este debe ser el Perfil de paciente Colombiano."
@@ -34,14 +34,14 @@ Description: "Definición de un documento clínico para las necesidades de inter
 
 //* --- Author : referencia a un practitioner----
 * author 1..1 
-* author only Reference($canonicaPractitioner) 
+* author only Reference(PractitionerCo) 
 * author MS
 * author ^short = "Quien Ha creado el documento"
 * author ^definition = "Identifica al responsable de los datos ingresados al documento."
 
 //* --- Custodio : referencia a una organización----
 * custodian 1..1
-* custodian only Reference($canonicaOrganization) 
+* custodian only Reference(OrganizacionCo) 
 * custodian MS
 * custodian ^short = "Indica la región que será custodio del documento."
 * custodian ^definition = "Indica la región que será custodio del documento."
@@ -90,7 +90,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionDiagnosticos].title 1.. MS
 
 * section[sectionDiagnosticos].entry 1.. MS
-* section[sectionDiagnosticos].entry only Reference($canonicaCondition)
+* section[sectionDiagnosticos].entry only Reference(ConditionCo)
 
 * section[sectionDiagnosticos].entry ^slicing.discriminator[0].type = #profile
 * section[sectionDiagnosticos].entry ^slicing.discriminator[=].path = "resolve()"
@@ -109,7 +109,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionMedicacion].code = $loinc#10160-0
 * section[sectionMedicacion].title 1.. MS
 * section[sectionMedicacion].entry 1.. MS
-* section[sectionMedicacion].entry only Reference($canonicaMedication)
+* section[sectionMedicacion].entry only Reference(MedicationStatementCo)
 
 * section[sectionMedicacion].entry ^slicing.discriminator[0].type = #profile
 * section[sectionMedicacion].entry ^slicing.discriminator[=].path = "resolve()"
@@ -126,7 +126,7 @@ Description: "Definición de un documento clínico para las necesidades de inter
 * section[sectionAlergias].code = $loinc#48765-2
 * section[sectionAlergias].title 1.. MS
 * section[sectionAlergias].entry 1.. MS
-* section[sectionAlergias].entry only Reference($canonicaAlergia)
+* section[sectionAlergias].entry only Reference(AlergiaCo)
 
 * section[sectionAlergias].entry ^slicing.discriminator[0].type = #profile
 * section[sectionAlergias].entry ^slicing.discriminator[=].path = "resolve()"

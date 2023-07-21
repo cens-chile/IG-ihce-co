@@ -1,12 +1,8 @@
 
 Instance: ProfesionalColombia
-InstanceOf: Practitioner
+InstanceOf: PractitionerCo
 Usage: #example
 Description: "Ejemplo de Profesional Colombiano."
-
-* meta.versionId = "1"
-* meta.lastUpdated = "2021-10-13T22:23:44.162Z"
-* meta.profile = $canonicaPractitioner 
 
 /*
     * identifier.type.coding.system = $cs_identper#CC

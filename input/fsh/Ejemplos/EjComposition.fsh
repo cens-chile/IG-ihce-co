@@ -3,10 +3,6 @@ InstanceOf: CompositionCo
 Usage: #example
 Description: "Ejemplo de Documento RDA Colombiano."
 
-* meta.versionId = "1"
-* meta.lastUpdated = "2021-10-13T22:23:44.162Z"
-* meta.profile = $canonicaComposition 
-
 * type = $loinc#60591-5 "Patient Summary Document"
 
 * subject = Reference(Patient/PacienteColombiano)
@@ -39,16 +35,16 @@ Description: "Ejemplo de Documento RDA Colombiano."
 * section[sectionMedicacion].code = http://loinc.org#10160-0 "Hx of Medication use"
 * section[sectionMedicacion].text.status = #generated
 * section[sectionMedicacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
-* section[sectionMedicacion].entry = Reference(MedicationStatement/MedicationStatementCo)
+* section[sectionMedicacion].entry = Reference(MedicationStatement/MedicationStatementColombia)
 
 
 // ------- seccion de Alergias
 * section[sectionAlergias].title = "Alergias"
 
-* section[sectionAlergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document."
+* section[sectionAlergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAlergias].text.status = #generated
 * section[sectionAlergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
-* section[sectionAlergias].entry = Reference(AllergyIntolerance/AlergiaCo)
+* section[sectionAlergias].entry = Reference(AllergyIntolerance/AlergiaColombia)
 
 
 /* ------------------Ejemplo ARGENTINO -------------------- */

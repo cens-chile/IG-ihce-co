@@ -1,4 +1,4 @@
-Instance: AlergiaCo
+Instance: AlergiaColombia
 InstanceOf: AlergiaCo
 Usage: #example
 
@@ -11,7 +11,7 @@ Usage: #example
 
 //* patient = Reference(Patient/eumfh-39-07) "Alexander Heig (inject 39-07)"
 
-* patient =  Reference(Patient/PacienteColombiano) "Paciente Colombiano"
+* patient =  Reference(PacienteColombiano) "Paciente Colombiano"
 
 * category = #food
 

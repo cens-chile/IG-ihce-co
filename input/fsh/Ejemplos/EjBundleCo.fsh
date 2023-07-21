@@ -4,7 +4,6 @@ Title : "Bundle Colombiano"
 Usage : #example
 Description: "Ejemplo de Bundle"
 
-* meta.profile = $canonicaBundleCo
 * type = #transaction
 
 //* identifier.system = "https://www.minsalud.gov.co/ihc/documentos"
@@ -14,10 +13,10 @@ Description: "Ejemplo de Bundle"
 
 
 //DocReference
-* entry[DocumentRefs].fullUrl = "DocumentReference/DocumentReferenceCo"
-* entry[DocumentRefs].resource = DocumentReferenceCo
-* entry[DocumentRefs].request.method = #POST
-* entry[DocumentRefs].request.url = "DocumentReference"
+* entry[DocumentRef].fullUrl = "DocumentReference/DocumentReferenceCo"
+* entry[DocumentRef].resource = DocumentReferenceColombia
+* entry[DocumentRef].request.method = #POST
+* entry[DocumentRef].request.url = "DocumentReference"
 
 
 //Composition
@@ -34,22 +33,22 @@ Description: "Ejemplo de Bundle"
 * entry[Profesional].request.url = "Practitioner"
 
 //Condition
-* entry[Condition].fullUrl = "Condition/ConditionColombia"
-* entry[Condition].resource = ConditionColombia
-* entry[Condition].request.method = #POST
-* entry[Condition].request.url = "Condition"
+* entry[Diagnosticos].fullUrl = "Condition/ConditionColombia"
+* entry[Diagnosticos].resource = ConditionColombia
+* entry[Diagnosticos].request.method = #POST
+* entry[Diagnosticos].request.url = "Condition"
 
 
 //Alergia-Intolerancia
-* entry[Alergias].fullUrl = "AllergyIntolerance/AlergiaCo"
-* entry[Alergias].resource = AlergiaCo
+* entry[Alergias].fullUrl = "AllergyIntolerance/AlergiaColombia"
+* entry[Alergias].resource = AlergiaColombia
 * entry[Alergias].request.method = #POST
 * entry[Alergias].request.url = "AllergyIntolerance"
 
 
 //Medicaction
-* entry[Medicaciones].fullUrl = "MedicationStatement/MedicationStatementCo" 
-* entry[Medicaciones].resource = MedicationStatementCo
+* entry[Medicaciones].fullUrl = "MedicationStatement/MedicationStatementColombia" 
+* entry[Medicaciones].resource = MedicationStatementColombia
 * entry[Medicaciones].request.method = #POST
 * entry[Medicaciones].request.url = "MedicationStatement"
 

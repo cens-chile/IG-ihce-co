@@ -12,7 +12,7 @@ Title:          "Alergias Co"
 Description:    "Alergias del paciente"
 
 //---paciente
-* patient only Reference($canonicaPaciente)
+* patient only Reference(PacienteCo)
 * patient MS
 * patient.reference 1.. MS
 

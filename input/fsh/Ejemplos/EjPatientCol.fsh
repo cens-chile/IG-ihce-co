@@ -123,9 +123,6 @@ InstanceOf: PacienteCo
 Description: "Ejemplo de Paciente Mínimo."
 
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-03-08T22:23:44.162Z"
-* meta.profile = $canonicaPaciente 
 
 * identifier[0].type.coding.system = $cs_identper //* identifier.type.coding.system = $cs_identper
 * identifier[0].type.coding.code = #CC //* identifier.type.coding.code = #CC

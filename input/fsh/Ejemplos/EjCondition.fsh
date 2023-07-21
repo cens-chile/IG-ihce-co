@@ -1,12 +1,8 @@
 
 Instance: ConditionColombia
-InstanceOf: Condition
+InstanceOf: ConditionCo
 Usage: #example
 Description: "Ejemplo de Condición/Antecedente de Paciente."
-
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-01-13T22:23:44.162Z"
-* meta.profile = $canonicaCondition
 
 * subject = Reference(Patient/PacienteColombiano)
 

@@ -17,25 +17,25 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 
 
 * entry contains
-    DocumentRefs 1..1 and
+    DocumentRef 1..1 and
     Profesional 1..1 and
     RDA 1..1 and
-    Condition 1..* and    
+    Diagnosticos 1..* and    
     Alergias 0..* and
     Medicaciones 0..* and    
     Patient 1..1
   
 
 /*   --------- Document REF ---------*/
-* entry[DocumentRefs] ^short = "Document Reference."
-* entry[DocumentRefs] ^definition = "Indica los documentos de referencia."
+* entry[DocumentRef] ^short = "Document Reference."
+* entry[DocumentRef] ^definition = "Indica los documentos de referencia."
 
-* entry[DocumentRefs].resource 1..
-* entry[DocumentRefs].resource only $canonicaDocRefCo
+* entry[DocumentRef].resource 1..
+* entry[DocumentRef].resource only DocumentReferenceCo
 
 //metodo POST
-* entry[DocumentRefs].request 1..
-* entry[DocumentRefs].request.method = #POST
+* entry[DocumentRef].request 1..
+* entry[DocumentRef].request.method = #POST
 
 
 /*   --------- Compostion ---------*/
@@ -43,7 +43,7 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[RDA] ^definition = "Registro Digital de Atención - Composition"
 
 * entry[RDA].resource 1..
-* entry[RDA].resource only $canonicaComposition
+* entry[RDA].resource only CompositionCo
 
 //metodo POST
 * entry[RDA].request 1..
@@ -55,22 +55,22 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[Profesional] ^definition = "Profesional"
 
 * entry[Profesional].resource 1..
-* entry[Profesional].resource only $canonicaPractitioner
+* entry[Profesional].resource only PractitionerCo
 
 //metodo POST
 * entry[Profesional].request 1..
 * entry[Profesional].request.method = #POST
 
 /* --------- Condition ---------*/
-* entry[Condition] ^short = "Condiciones."
-* entry[Condition] ^definition = "Corresponden a los diagnosticos."
+* entry[Diagnosticos] ^short = "Condiciones."
+* entry[Diagnosticos] ^definition = "Corresponden a los diagnosticos."
 
-* entry[Condition].resource 1..
-* entry[Condition].resource only $canonicaCondition
+* entry[Diagnosticos].resource 1..
+* entry[Diagnosticos].resource only ConditionCo
 
 //metodo POST
-* entry[Condition].request 1..
-* entry[Condition].request.method = #POST
+* entry[Diagnosticos].request 1..
+* entry[Diagnosticos].request.method = #POST
 
 
 
@@ -79,7 +79,7 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[Alergias] ^definition = "Alergias/Intolerancias."
 
 * entry[Alergias].resource 1..
-* entry[Alergias].resource only $canonicaAlergia 
+* entry[Alergias].resource only AlergiaCo
 * entry[Alergias].request.method = #POST
 
 
@@ -89,7 +89,7 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[Medicaciones] ^definition = "Medicamentos"
 
 * entry[Medicaciones].resource 1..
-* entry[Medicaciones].resource only $canonicaMedication 
+* entry[Medicaciones].resource only MedicationStatementCo 
 * entry[Medicaciones].request.method = #POST
 
 
@@ -98,7 +98,7 @@ Description: "Se describe como debe ser el recurso Bundle para transportar Docum
 * entry[Patient] ^definition = "Paciente."
 
 * entry[Patient].resource 1..
-* entry[Patient].resource only $canonicaPaciente
+* entry[Patient].resource only PacienteCo
 * entry[Patient].request.method 
 * entry[Patient].request.method = #POST
 
