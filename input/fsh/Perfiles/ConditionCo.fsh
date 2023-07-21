@@ -21,7 +21,7 @@ Description:    "Condicion del paciente"
 * code.text 1..1 MS
 * code.coding.code 1..1
 * code.coding.system 1..1
-* code.coding.code from $CIE10VS (preferred) 
+* code.coding.code from CIE10VS (required) 
 * code.coding.system = "http://hl7.org/fhir/sid/icd-10"
 * code.coding.display 1..1
 

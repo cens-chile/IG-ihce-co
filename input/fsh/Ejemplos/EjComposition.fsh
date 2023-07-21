@@ -1,5 +1,5 @@
 Instance: CompositionColombia
-InstanceOf: Composition
+InstanceOf: CompositionCo
 Usage: #example
 Description: "Ejemplo de Documento RDA Colombiano."
 
@@ -24,31 +24,31 @@ Description: "Ejemplo de Documento RDA Colombiano."
 * custodian = Reference(Organization/OrganizacionRegionEjemplo)
 
 // ------- seccion de condition, problemas activos.
-* section[0].title = "Condiciones del Paciente"
+* section[sectionDiagnosticos].title = "Condiciones del Paciente"
 
-* section[=].code = http://loinc.org#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
-* section[=].entry = Reference(Condition/ConditionColombia)
+* section[sectionDiagnosticos].code = http://loinc.org#11450-4 "Problem list Reported"
+* section[sectionDiagnosticos].text.status = #generated
+* section[sectionDiagnosticos].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">CONDICIONES</div>"
+* section[sectionDiagnosticos].entry = Reference(Condition/ConditionColombia)
 
 
 
 // ------- seccion de medicamentos
-* section[0].title = "Medicamentos"
+* section[sectionMedicacion].title = "Medicamentos"
 
-* section[=].code = http://loinc.org#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
-* section[=].entry = Reference(MedicationStatement/MedicationStatementCo)
+* section[sectionMedicacion].code = http://loinc.org#10160-0 "Hx of Medication use"
+* section[sectionMedicacion].text.status = #generated
+* section[sectionMedicacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MEDICAMENTOS</div>"
+* section[sectionMedicacion].entry = Reference(MedicationStatement/MedicationStatementCo)
 
 
 // ------- seccion de Alergias
-* section[0].title = "Alergias"
+* section[sectionAlergias].title = "Alergias"
 
-* section[=].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document."
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
-* section[=].entry = Reference(AllergyIntolerance/AlergiaCo)
+* section[sectionAlergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document."
+* section[sectionAlergias].text.status = #generated
+* section[sectionAlergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALERGIAS</div>"
+* section[sectionAlergias].entry = Reference(AllergyIntolerance/AlergiaCo)
 
 
 /* ------------------Ejemplo ARGENTINO -------------------- */

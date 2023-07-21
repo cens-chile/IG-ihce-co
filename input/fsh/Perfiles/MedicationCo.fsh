@@ -23,11 +23,18 @@ Description:    "Medicación del paciente"
 * medicationCodeableConcept 0..1 MS
 //* medicationCodeableConcept only $CUMSvs
 //* medicationCodeableConcept from $absent-or-unknown-medications-uv-ips (extensible)
-* medicationCodeableConcept from $CUMSvs
+* medicationCodeableConcept from CUMSVS (extensible)
 
 * medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
 * medicationCodeableConcept ^short = "Code for the medication being administered or an absent or unknown medication"
 * medicationCodeableConcept ^definition = "Code for the medication being administered or a negated/excluded medication statement.  If negated, this describes a categorical negated statement (e.g., \"No known medications\")."
+* medicationCodeableConcept ^binding.strength = #preferred
+
+* medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
+* medicationCodeableConcept ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][=].extension[valueSet].valueCanonical = https://www.minsalud.gov.co/CodeSystem/IUM
+
+// * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][+].extension[purpose].valueCode = #candidate
+// * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][=].extension[valueSet].valueCanonical = http://id.who.int/icd/release/11/mms
 
 /*
 * medicationCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

@@ -199,15 +199,27 @@ Description:  "Conjunto de Valores de Codificacion CIE10"
 */
 
 
-/* ---------------------CUMS --------------------------
+
+/* ---------------------CUMS --------------------------*/
 
 
 ValueSet: CUMSVS
 Id: CUMSVS
-Title: "Codificacion CCUMS VS"
-Description:  "Conjunto de Valores de Codificacion CIE10"
+Title: "Codificacion CUMS"
+Description:  "Conjunto de Valores de Codificacion CUMS"
 
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system https://www.minsalud.gov.co/CodeSystem/CUMS
+
+
+/* ---------------------IUM --------------------------*/
+
+
+ValueSet: IUMVS
+Id: IUMVS
+Title: "Codificacion IUM"
+Description:  "Conjunto de Valores de Codificacion IUM"
+
+* include codes from system https://www.minsalud.gov.co/CodeSystem/IUM
 
 /*-----------------PAISES-----------------------------------------*/
 
