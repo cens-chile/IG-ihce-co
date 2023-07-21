@@ -33,7 +33,7 @@ Usage: #example
 * identifier[0].assigner.display = "Registraduria Nacional"
 
 * identifier[0].type.extension.url = $Pais
-* identifier[0].type.extension.valueCodeableConcept.coding.system = $cs_pais
+* identifier[0].type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier[0].type.extension.valueCodeableConcept.coding.code = #170 "Colombia"
 	
 
@@ -52,7 +52,7 @@ Usage: #example
 
 //nacionalidad:
 * extension[co-patient-nacionalidad].url = $Nacionalidad
-* extension[co-patient-nacionalidad].valueCodeableConcept = $cs_pais#170 "Colombia"
+* extension[co-patient-nacionalidad].valueCodeableConcept = urn:iso:std:iso:3166#170 "Colombia"
 
 
 * address.city = "Medellín"
@@ -94,7 +94,7 @@ Usage: #example
 * identifier[0].value = "9753"
 
 * identifier[0].type.extension.url = $Pais
-* identifier[0].type.extension.valueCodeableConcept.coding.system = $cs_pais
+* identifier[0].type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier[0].type.extension.valueCodeableConcept.coding.code = #032	"Argentina"
 
 //nombre completo: ANA MARIA PEREZ(paterno) RIVAS (materno)
@@ -133,7 +133,7 @@ Usage: #example
 
 
 * identifier[0].type.extension.url = $Pais
-* identifier[0].type.extension.valueCodeableConcept.coding.system = $cs_pais
+* identifier[0].type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier[0].type.extension.valueCodeableConcept.coding.code = #170 "Colombia"
 
 * name[0].given = "Luis"

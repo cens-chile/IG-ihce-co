@@ -1,7 +1,7 @@
 Profile:        OrganizacionCo
 Parent:         Organization
 Title:          "Organizacion Co"
-Description:    "Organización de Salud."
+Description:    "Organización de Salud"
 
 * active ^short = "Estado de si es una Organización Validada o no (true|false)"
 * active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"
@@ -25,6 +25,6 @@ entidades adaptadas, las que administran los regímenes Especial y de Excepción
 * name ^definition = "Nombre de la Organización"
 
 * type MS
-* type ^short = "Indica el tipo de la organización. " 
+* type ^short = "Indica el tipo de la organización" 
 * type ^definition = "Nombre de la Organización"
 

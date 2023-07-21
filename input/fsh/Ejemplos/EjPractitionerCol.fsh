@@ -24,6 +24,6 @@ Description: "Ejemplo de Profesional Colombiano."
 * identifier[0].assigner.display = "Registraduria Nacional"
 
 * identifier[0].type.extension.url = $Pais
-* identifier[0].type.extension.valueCodeableConcept.coding.system = $cs_pais
+* identifier[0].type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * identifier[0].type.extension.valueCodeableConcept.coding.code = #170 "Colombia"
 	
