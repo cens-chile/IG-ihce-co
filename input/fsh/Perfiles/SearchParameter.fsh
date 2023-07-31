@@ -20,7 +20,7 @@ Usage: #definition
 * base[0] = #Patient
 * base[1] = #Practitioner
 * type = #token
-* expression = "DomainResource.identifier.type"
+* expression = "Patient.identifier.type | Practitioner.identifier.type"
 * xpathUsage = #normal
 
 Instance: identifier-country
@@ -45,5 +45,5 @@ Usage: #definition
 * base[0] = #Patient
 * base[1] = #Practitioner
 * type = #token
-* expression = "DomainResource.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais')"
+* expression = "Patient.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais') | Practitioner.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais')"
 * xpathUsage = #normal
