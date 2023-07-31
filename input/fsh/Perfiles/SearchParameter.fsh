@@ -15,11 +15,12 @@ Usage: #definition
 * contact.telecom[=].value = "https://cens.cl"
 * contact.telecom[+].system = #email
 * contact.telecom[=].value = "contacto@cens.cl"
-* description = "Busqueda de un Patient por el valor de identifier.type"
+* description = "Busqueda de un Patient-Practitioner por el valor de identifier.type"
 * code = #identifier-type
-* base = #Patient
+* base[0] = #Patient
+* base[1] = #Practitioner
 * type = #token
-* expression = "Patient.identifier.type"
+* expression = "DomainResource.identifier.type"
 * xpathUsage = #normal
 
 Instance: identifier-country
@@ -39,9 +40,10 @@ Usage: #definition
 * contact.telecom[=].value = "https://cens.cl"
 * contact.telecom[+].system = #email
 * contact.telecom[=].value = "contacto@cens.cl"
-* description = "Busqueda de un Patient por el valor de la extension de pais"
+* description = "Busqueda de un Patient-Practitioner por el valor de la extension de pais"
 * code = #identifier-country
-* base = #Patient
+* base[0] = #Patient
+* base[1] = #Practitioner
 * type = #token
-* expression = "Patient.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais')"
+* expression = "DomainResource.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais')"
 * xpathUsage = #normal
