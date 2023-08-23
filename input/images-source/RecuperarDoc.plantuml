@@ -1,5 +1,5 @@
 @startuml
 Prestador -> PlataformaIHC: GET Composition/id/$document
-PlataformaIHC --> Prestador: Bundle (type=document, Composition, Condition , ..)
+PlataformaIHC --> Prestador: Bundle (type=document, Composition, Condition, ...)
 
 @enduml

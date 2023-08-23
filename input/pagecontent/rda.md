@@ -23,17 +23,17 @@ El modelo del RDA está basado en los siguientes recursos del estándar:
 * PatientCo, información demográfica del paciente
 * Practitioner, Profesional de salud
 * Organization, Prestador donde se realiza la atención
-* Encounter, información general del evento
+* Encounter(pendiente), información general del evento
 * MedicationStatment, medicamentos que le son administrados al paciente
-* Procedure, procedimientos que han sido realizados
-* Observation, resultados
+* Procedure(pendiente), procedimientos que han sido realizados
+* Observation(pendiente), resultados
 * AlergyIntolerance, tipos de alergia
-* FamilyMemberHistory, antecedentes
+* FamilyMemberHistory(pendiente), antecedentes
 * Condition, diagnósticos y condición del paciente
 
 
 ### Versiones del RDA
 
-* RDA Mínimo, utilizado para la prueba piloto de Bogotá, Cundinamarca, Antioquia, Santander y Valle del Cauca  unicamente tendra los recursos : DocumentReference, Composition, Patient, Organization, Practitioner yCondition.
+* RDA Mínimo, utilizado para la prueba piloto de Bogotá, Cundinamarca, Antioquia, Santander y Valle del Cauca  unicamente tendrá los recursos : DocumentReference, Composition, Patient, Organization, Practitioner y Condition.
 
 * RDA V1, esta version inlcuye los recursos MedicationStatement, Allergy.

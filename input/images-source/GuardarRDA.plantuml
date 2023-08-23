@@ -1,4 +1,4 @@
 @startuml
-Prestador -> PlataformaIHC: POST Bundle (DocumentReference, Composition, Condition, Patient)
+Prestador -> PlataformaIHC: POST Bundle (DocumentReference, Composition, Condition, Patient, ...)
 PlataformaIHC --> Prestador: { 201 ok,  201 ok,  201 ok,  201 ok}
 @enduml

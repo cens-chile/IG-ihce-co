@@ -23,3 +23,7 @@
   - Se modifica cardinalidad en Composition.section
   - Se modifica cardinalidad en Composition.section:sectionDiagnosticos
   - Actualización de Ejemplos
+- 0.4.2 , 2023-08-23
+  - Se agrega Actualización a perfil de Alergias
+  - Se agrega Valueset de Tipos de Alergias según resolución 866
+  - Se corrigien ejemplos de alergias

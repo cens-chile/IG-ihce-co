@@ -558,3 +558,30 @@ Description: "Codigos definidos para la identificación de países segun norma I
 
 * include codes from system PaisesCS
 
+/* ---------------------Tipo Alergias ---------------------------*/
+CodeSystem: AlergiasCS
+Id: AlergiasCS
+Title: "Tipo Alergia"
+Description: "Antecedente de Alergia"
+* ^name = "AlergiasCS"
+
+* #01   "Medicamento"
+* #02   "Alimento"
+* #03   "Sustancia del ambiente"
+* #04   "Sustancia que entran en contacto con la piel"
+* #05   "Picadura de insectos"
+* #06	"Otra"
+
+
+ValueSet: AlergiasVS
+Id: AlergiasVS
+Title: "Tipo Alergia"
+Description:  "Tipo Alergia"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-01-01T00:00:00-05:00"
+* ^jurisdiction = urn:iso:std:iso:3166#COL "Colombia"
+* ^publisher = "COL"
+
+* include codes from system AlergiasCS

@@ -13,7 +13,9 @@ Usage: #example
 
 * patient =  Reference(PacienteColombiano) "Paciente Colombiano"
 
-* category = #food
+* extension[TipoAlergia].url = "https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-AllergyIntolerance-tipo"
+* extension[TipoAlergia].valueCodeableConcept.coding.code = #03
+* extension[TipoAlergia].valueCodeableConcept.coding.system = "https://www.minsalud.gov.co/ihc/fhir/CodeSystem/AlergiasCS"
 
 //* onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 //* onsetDateTime.extension.valueCode = #unknown

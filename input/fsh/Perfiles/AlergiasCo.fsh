@@ -19,9 +19,7 @@ Description:    "Alergias del paciente"
 * patient ^short = "Paciente sobre al que corresponde la alergia."
 * patient ^definition = "Paciente sobre al que corresponde la alergia." 
 
-* category 0..1	MS 
-* category ^short = "food | medication | environment | biologic"
-* category ^definition = "Categoría de la alergia o intolerancia detectada." 
+* extension contains co-AllergyIntolerance-tipo named TipoAlergia 1..1 MS
 
 * code.text ^short  = "Nombre del alérgeno"	
 * code.text 1..1 MS
@@ -163,3 +161,19 @@ Description: "This profile represents the constraints applied to the MedicationS
 * dosage.route ^binding.description = "EDQM Standards Terms"
 
 */
+
+//*------------Alergias 866------------------------------------------*/
+Extension: TipoAlergia
+Id: co-AllergyIntolerance-tipo
+Description: "Extensión utilizada para representar el tipo de la alergía."
+* value[x] only CodeableConcept
+* value[x] ^short = "Tipo Alergía"
+* url 1..1 MS
+
+* valueCodeableConcept from AlergiasVS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * system 0..1 MS
+  * display 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+* valueCodeableConcept 1..1

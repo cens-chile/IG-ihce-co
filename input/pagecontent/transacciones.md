@@ -5,6 +5,8 @@ La siguiente sección, describe como serán las transacciones con la plataforma.
 ### Guardar Documento.
 Desde el prestador se debe generar un RDA válido,  y se debe construir un Bundle para su envio mediante un POST a los servicios de la Plataforma de la IHC.  En la plataforma el RDA es recibido, validado y consolidado dentro del repositorio territorial con los respectivos identificadores nacionales y es indexado en el recurso DocumentReference.  La Plataforma responde con un mensaje del resultado de la transacción. 
 
+Perfil de Bundle de RDA: [BundleCo](StructureDefinition-BundleCo.html)
+
 <div>
 {% include GuardarRDA.svg %}
 </div>
