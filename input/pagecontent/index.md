@@ -5,7 +5,7 @@ Como antecedente de interoperabilidad en salud en Colombia, el Ministerio de Sal
 
 ### Alcances
 
-Esta versión de Guía de Implementación GI define las especificaciones para la CONECTATON IHC Julio-2022, esta orientada a la especificación de los datos clínicos relevantes tomando como referencia la Resolución 866 de 2021, focalizando en dos artefactos importantes del estándar: los datos demográficos del paciente, el Resumen Digital de Atención RDA y sus vocabularios terminólogicos requeridos.
+Esta versión de Guía de Implementación GI define las especificaciones o anexo técnico, que permite a los prestadores la implementación del mecanismo de interoperabilidad de los datos clínicos relevantes tomando como referencia la Resolución 866 de 2021, focalizando en dos artefactos importantes del estándar: los datos demográficos del paciente, el Resumen Digital de Atención RDA y sus vocabularios terminológicos requeridos.
 
 De igual manera se han incluido las operaciones y transacciones necesarias para la interacción de los prestadores con la plataforma IHC, especificando los mensajes necesarios para realizar el envio, consulta y visualización de los RDA.
 
