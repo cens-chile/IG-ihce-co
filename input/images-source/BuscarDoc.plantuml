@@ -1,5 +1,5 @@
 @startuml
-Prestador -> PlataformaIHC: GET DocumentReference (subject.identifier: <<valor>>)
+Prestador -> PlataformaIHC: GET DocumentReference (patient.identifier=<ej:1234>&patient.identifier-type=<ej:CC>)
 PlataformaIHC --> Prestador: Bundle (DocumentReference)
 @enduml
 
