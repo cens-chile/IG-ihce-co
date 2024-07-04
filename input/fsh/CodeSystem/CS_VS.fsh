@@ -6,6 +6,7 @@ Description: "Elemento de dato que contiene el nombre y número de identificaci�
 * ^name = "IdspersonaColombia"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 * ^date = "2010-01-29"
 * ^publisher = "MSP Colombia."
 * ^content = #complete
@@ -78,6 +79,8 @@ Title: "Discapacidad"
 Description: "Identificador para determinar la categoría de discapacidad de
 acuerdo con el dominio o dominios donde se presente la deficiencia o deficiencias corporales del solicitante"
 * ^name = "DiscapacidadCS"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #01   "Discapacidad física"
 * #02   "Discapacidad visual"
@@ -108,6 +111,8 @@ Id: IdentidadGeneroCS
 Title: "Identidad de genero"
 Description: "Identidad de Género."
 * ^name = "IdentidadGenero"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #01    "Masculino"
 * #02    "Femenino"
@@ -134,6 +139,8 @@ Id: ZonaResidenciaCS
 Title: "Zona de residencia"
 Description: "Identificador para representar la Zona."
 * ^name = "ZonaResidencia"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #01    "Urbana"
 * #02    "Rural"
@@ -159,6 +166,8 @@ Id: EtniaCS
 Title: "Etnia"
 Description: "Identificador para determinar la pertenencia étnica de la persona."
 * ^name = "Etnia"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #01   "Indigena"
 * #02   "ROM (Gitanos)"
@@ -289,6 +298,8 @@ Id: PaisesCS
 Title: "Códigos del País CS"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
 * ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
 //* include codes from valueset http://hl7.org/fhir/ValueSet/iso3166-1-N
 //* include codes from system urn:iso:std:iso:3166
 
@@ -564,6 +575,8 @@ Id: AlergiasCS
 Title: "Tipo Alergia"
 Description: "Antecedente de Alergia"
 * ^name = "AlergiasCS"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #01   "Medicamento"
 * #02   "Alimento"

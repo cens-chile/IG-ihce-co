@@ -45,5 +45,5 @@ Usage: #definition
 * base[0] = #Patient
 * base[1] = #Practitioner
 * type = #token
-* expression = "Patient.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais') | Practitioner.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/Pais')"
+* expression = "Patient.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais') | Practitioner.identifier.type.extension('https://www.minsalud.gov.co/ihc/fhir/StructureDefinition/co-pais')"
 * xpathUsage = #normal
